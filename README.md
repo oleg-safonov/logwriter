@@ -1,7 +1,7 @@
 # logwriter golang
 Should your application crash if the disk with the log file is full?
 Should the application slow down if writing to disk is slower than the appearance of new portions of logs?
-Logwriter package provides a LogWriter type with a circular buffer for logs that are written to the output io.Writer whenever possible.
+Package logwriter provides a LogWriter type with a circular buffer for logs that are written to the output io.Writer whenever possible.
 If the buffer overflows, the new record is skipped and one of SkipHandler or WriteErrorHandler is called.
 
 Package logwriter is inspired by the description of the "back pressure" problem from the book [Go in Practice](http://goinpracticebook.com/).
