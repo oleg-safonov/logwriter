@@ -27,7 +27,6 @@ func (tb *testBuffer) Write(p []byte) (int, error) {
 
 	if tb.panicbit {
 		panic("write error")
-		return 0, fmt.Errorf("write error")
 	}
 	time.Sleep(tb.delay)
 	tb.buf.Write(p)

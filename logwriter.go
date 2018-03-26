@@ -200,9 +200,9 @@ func (l *LogWriter) allocMem(lenP int) (freeSlice [2]part, n int) {
 func (l *LogWriter) freeSize() int {
 	if l.startPos <= l.endPos {
 		return l.maxBufSize - (l.endPos - l.startPos) - 1
-	} else {
-		return l.startPos - l.endPos - 1
 	}
+
+	return l.startPos - l.endPos - 1
 }
 
 func (l *LogWriter) ioHandler(cBuf *[]byte, out io.Writer) {
