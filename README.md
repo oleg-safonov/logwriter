@@ -1,4 +1,5 @@
 # logwriter golang
+[![Build Status](https://travis-ci.org/oleg-safonov/logwriter.svg?branch=master)](https://travis-ci.org/oleg-safonov/logwriter)[![Coverage Status](https://coveralls.io/repos/github/oleg-safonov/logwriter/badge.svg?branch=master)](https://coveralls.io/github/oleg-safonov/logwriter?branch=master)[![GoDoc](https://godoc.org/github.com/oleg-safonov/logwriter?status.svg)](https://godoc.org/github.com/oleg-safonov/logwriter)
 Should your application crash if the disk with the log file is full?
 Should the application slow down if writing to disk is slower than the appearance of new portions of logs?
 Package logwriter provides a LogWriter type with a circular buffer for logs that are written to the output io.Writer whenever possible.
