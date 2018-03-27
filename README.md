@@ -8,7 +8,6 @@ If the buffer overflows, the new record is skipped and one of SkipHandler or Wri
 Package logwriter is inspired by the description of the "back pressure" problem from the book [Go in Practice](http://goinpracticebook.com/).
 
 ## Usage
-Create and update metrics:
 ```
 	var skipCount int
 	var errorCount int
